@@ -1,0 +1,13 @@
+<div class="likert-draw">
+  <div class="static-bar">
+    <div class="likert-bar" [ngStyle]="{width, 'background-color':backgroundColor}">
+      <div class="likert-btn" [ngStyle]="{'background-color':backgroundColor}">
+        <div class="likert-btn-decorate"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-faces (selected)="satisfaction($event)"></app-faces>
+
+<button (click)="returnValue()">Aceptar</button>

@@ -1,0 +1,27 @@
+:host{
+  width:100%;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+
+.face{
+  margin-top: 3%;
+  display:grid;
+  grid-template-rows: repeat(2,1fr);
+  cursor: pointer;
+  justify-items: center;
+}
+
+.face:hover{
+  transform: scale(1.05);
+}
+
+i{
+  font-size:5rem;
+}
+
+.label{
+  margin-top: 5%;
+  font-family: 'Lato', sans-serif;
+}
+

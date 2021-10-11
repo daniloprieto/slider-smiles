@@ -1,0 +1,34 @@
+<div class="face" (click)="CustomerSatisfaction(10)">
+  <div class="face-draw">
+    <i class='far fa-angry' [ngStyle]="{color: percentage === 10 ? blue: 'gray'}"></i>
+  </div>
+  <div class="label" [ngStyle]="{color: percentage === 10 ? blue: 'gray'}">Muy insatisfecho</div>
+</div>
+
+<div class="face" (click)="CustomerSatisfaction(30)">
+  <div class="face-draw">
+    <i class="far fa-frown" [ngStyle]="{color: percentage === 30 ? blue: 'gray'}"></i>
+  </div>
+  <div class="label" [ngStyle]="{color: percentage === 30 ? blue: 'gray'}">Insatisfecho</div>
+</div>
+
+<div class="face" (click)="CustomerSatisfaction(50)">
+  <div class="face-draw">
+    <i class="far fa-frown-open" [ngStyle]="{color: percentage === 50 ? blue: 'gray'}"></i>
+  </div>
+  <div class="label" [ngStyle]="{color: percentage === 50 ? blue: 'gray'}">Regular</div>
+</div>
+
+<div class="face" (click)="CustomerSatisfaction(70)">
+  <div class="face-draw">
+    <i class="far fa-grin" [ngStyle]="{color: percentage === 70 ? blue: 'gray'}"></i>
+  </div>
+  <div class="label" [ngStyle]="{color: percentage === 70 ? blue: 'gray'}">Satisfecho</div>
+</div>
+
+<div class="face" (click)="CustomerSatisfaction(100)">
+  <div class="face-draw">
+    <i class="far fa-grin-beam" [ngStyle]="{color: percentage === 100 ? blue: 'gray'}"></i>
+  </div>
+  <div class="label" [ngStyle]="{color: percentage === 100 ? blue: 'gray'}">Muy satisfecho</div>
+</div>

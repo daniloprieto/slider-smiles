@@ -1,0 +1,68 @@
+//colors
+$blue: #0099ff;
+$red: 'red';
+$orange: 'coral';
+$yellow: 'orange';
+$greenYellow: 'lime';
+$green: 'limeGreen';
+
+:host{
+  padding: 2%;
+}
+
+.likert-draw{
+  width: 100%;
+  height: 40px;
+  grid-column: 2/5;
+  grid-row: 2;
+  place-items: center;
+}
+
+.likert-draw .static-bar{
+  width: 100%;
+  height: 1.7rem;
+  border: 0.05rem solid $blue;
+  border-radius: 50px;
+}
+
+.likert-bar{
+  width: 50%;
+  height: 100%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.likert-btn{
+  border:0.1px solid $blue;
+  width: 49.48px;
+  height: 46px;
+  border-radius:100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.likert-btn-decorate{
+  border: 0.1px solid $blue;
+  background-color:  white;
+  width: 23.67px;
+  height: 22px;
+  border-radius: 100px;
+}
+
+button{
+  float: right;
+  cursor: pointer;
+  background-color: $blue;
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.25rem 2rem;
+  border: 1px solid $blue;
+  border-radius: 1rem;
+}
+
+button:hover{
+  transform: scale(1.05);
+}
